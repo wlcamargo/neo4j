@@ -1,0 +1,14 @@
+services:
+  neo4j:
+      image: neo4j:3.5.26
+      container_name: neo4j
+      environment:
+        - NEO4J_AUTH=neo4j/test
+      ports:
+          - 7474:7474
+          - 7687:7687
+      volumes:
+          - neo4j_data:/data
+
+volumes:
+  neo4j_data:
