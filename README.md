@@ -1,5 +1,10 @@
 # Neo4j
-Neo4j rodando no Docker
+Neo4j rodando no Docker.
+
+O objetivo desse projeto é analisar graficamente a comunicação entre os microserviços Docker.
+
+## Arquitetura
+![image](assets/architecture.png)
 
 ## Pré-requisitos
 * Docker
@@ -36,7 +41,7 @@ password: test
 
 -----------------------------
 
-## Coletando relacionamento entre microserviços
+## Coletando microserviços
 Crie o ambiente virtual com Python
 ```
 python3 -m venv venv
@@ -57,9 +62,17 @@ Execute o comando para coletar todos os microserviços rodando
 python src/export_services.py
 ```
 
+Exemplo:
+
+![image](assets/stack-docker.png)
+
+![image](assets/result.png)
+
+
 ## Referência
 https://www.youtube.com/watch?v=-YH3W4SXgKY
 
+https://neo4j.com/docs/
 
 ## Developer
 | Desenvolvedor      | LinkedIn                                   | Email                        | Portfólio                              |
